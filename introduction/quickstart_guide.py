@@ -8,9 +8,9 @@ from langchain.agents import AgentType
 from langchain.agents.load_tools import get_all_tool_names
 from langchain import ConversationChain
 
+
 # Load environment variables
 load_dotenv(find_dotenv())
-
 
 # --------------------------------------------------------------
 # LLMs: Get predictions from a language model

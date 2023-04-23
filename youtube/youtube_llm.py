@@ -11,7 +11,6 @@ import textwrap
 load_dotenv(find_dotenv())
 embeddings = OpenAIEmbeddings()
 
-
 def create_db_from_youtube_video_url(video_url: str) -> FAISS:
     loader = YoutubeLoader.from_youtube_url(video_url)
     transcript = loader.load()

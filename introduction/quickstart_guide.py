@@ -11,6 +11,7 @@ from langchain import ConversationChain
 # Load environment variables
 load_dotenv(find_dotenv())
 
+
 # --------------------------------------------------------------
 # LLMs: Get predictions from a language model
 # --------------------------------------------------------------
@@ -20,10 +21,12 @@ prompt = "Write a poem about python and ai"
 print(llm(prompt))
 
 
+
 # --------------------------------------------------------------
 # Prompt Templates: Manage prompts for LLMs
 # --------------------------------------------------------------
 
+#
 prompt = PromptTemplate(
     input_variables=["product"],
     template="What is a good name for a company that makes {product}?",

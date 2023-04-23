@@ -27,6 +27,7 @@ def create_db_from_youtube_video_url(video_url):
     return db
 
 
+
 def get_response_from_query(db, query, k=4):
     """
     gpt-3.5-turbo can handle up to 4097 tokens. Setting the chunksize to 1000 and k to 4 maximizes
@@ -68,9 +69,9 @@ def get_response_from_query(db, query, k=4):
 
 
 # Example usage:
-video_url = "https://www.youtube.com/watch?v=L_Guz73e6fw"
+video_url = "https://www.youtube.com/watch?v=0cp3orVR5lg"
 db = create_db_from_youtube_video_url(video_url)
 
-query = "What are they saying about Microsoft?"
+query = "What are they saying about aliens?"
 response, docs = get_response_from_query(db, query)
 print(textwrap.fill(response, width=50))
